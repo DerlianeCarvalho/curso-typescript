@@ -1,5 +1,5 @@
 // string
-let nome: string= 'Joao'
+let nome: string= 'Pedro'
 console.log(nome)
 // nome = 28
 
@@ -14,7 +14,7 @@ let possuiHobbies: boolean =false
 // possuiHobbies = 1
 console.log(possuiHobbies)
 
-// tipos explicitos
+// tipos explícitos
 let minhaIdade: number
 minhaIdade = 30
 console.log(typeof minhaIdade)
@@ -52,3 +52,52 @@ console.log(minhaCor)
 console.log(Cor.Azul)
 console.log(Cor.Laranja, Cor.Amarelo)
 console.log(Cor.Verde, Cor.Vermelho)
+
+// any
+ let carro: any = 'BMW'
+ console.log(carro)
+ carro = { marca: 'BMW', ano: '2022'}
+ console.log(carro)
+
+ // função
+  function retornaMeuNome() {
+     return nome
+  }
+ 
+  console.log(retornaMeuNome())
+
+  function digaOi(): void {
+    console.log('Oi')
+  }
+
+digaOi()
+
+function multiplcar (numA: number, numB: number): number {
+    return numA * numB
+}
+ console.log(multiplcar(4.5, 9))
+
+ // tipo função
+ let calculo: (x: number, y: number) => number
+  // calculo = digaOi
+  // calculo()
+
+ calculo = multiplcar
+ console.log(calculo (4, 9))
+
+ // objetos
+ let usuario: { nome: string, idade: number} = {
+    nome: 'Pedro',
+    idade: 30
+ }
+
+ console.log(usuario)
+ // usuario = {}
+
+ // usuario = {
+ //  name : 'Maria',
+ //   age: '29'
+ // }
+
+
+

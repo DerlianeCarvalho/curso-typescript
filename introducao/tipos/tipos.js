@@ -1,6 +1,6 @@
 "use strict";
 // string
-let nome = 'Joao';
+let nome = 'Pedro';
 console.log(nome);
 // nome = 28
 // numbers 
@@ -12,7 +12,7 @@ console.log(idade);
 let possuiHobbies = false;
 // possuiHobbies = 1
 console.log(possuiHobbies);
-// tipos explicitos
+// tipos explícitos
 let minhaIdade;
 minhaIdade = 30;
 console.log(typeof minhaIdade);
@@ -44,3 +44,38 @@ console.log(minhaCor);
 console.log(Cor.Azul);
 console.log(Cor.Laranja, Cor.Amarelo);
 console.log(Cor.Verde, Cor.Vermelho);
+// any
+let carro = 'BMW';
+console.log(carro);
+carro = { marca: 'BMW', ano: '2022' };
+console.log(carro);
+// função
+function retornaMeuNome() {
+    return nome;
+}
+console.log(retornaMeuNome());
+function digaOi() {
+    console.log('Oi');
+}
+digaOi();
+function multiplcar(numA, numB) {
+    return numA * numB;
+}
+console.log(multiplcar(4.5, 9));
+// tipo função
+let calculo;
+// calculo = digaOi
+// calculo()
+calculo = multiplcar;
+console.log(calculo(4, 9));
+// objetos
+let usuario = {
+    nome: 'Pedro',
+    idade: 30
+};
+console.log(usuario);
+// usuario = {}
+// usuario = {
+//  name : 'Maria',
+//   age: '29'
+// }
