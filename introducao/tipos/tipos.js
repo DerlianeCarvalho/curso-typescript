@@ -79,3 +79,11 @@ console.log(usuario);
 //  name : 'Maria',
 //   age: '29'
 // }
+usuario = {
+    idade: 31,
+    nome: 'Maria'
+};
+console.log(usuario);
+// Desafio Aula
+let funcionario = {};
+console.log(funcionario);

@@ -90,14 +90,28 @@ function multiplcar (numA: number, numB: number): number {
     nome: 'Pedro',
     idade: 30
  }
-
- console.log(usuario)
+ 
+  console.log(usuario)
  // usuario = {}
-
+ 
  // usuario = {
- //  name : 'Maria',
- //   age: '29'
- // }
+   //  name : 'Maria',
+   //   age: '29'
+   // }
+   
+   usuario = {
+     idade: 31,
+     nome: 'Maria'
+    }
+    console.log(usuario)
 
+    // Desafio Aula
+    
 
+     let funcionario = {
 
+      }
+
+     console.log(funcionario)
+
+    
