@@ -107,11 +107,98 @@ function multiplcar (numA: number, numB: number): number {
 
     // Desafio Aula
     
+    // Alias
 
-     let funcionario = {
+    type Funcionário = {
+      supervisores: string[],
+      baterPonto: (horas: number) => string,
+} 
 
-      }
+     let funcionário: Funcionário = {
+    supervisores: ['Flavio', 'Claudia', 'Leandro'],
+    baterPonto(horário: number): string {
+      if (horário <=8) {
+        return 'Ponto normal'
+  } else {
+    return 'Fora do horário!'}
+    }
+  }
 
-     console.log(funcionario)
+  let funcionário2:Funcionário = {
+  supervisores: ['Ana', 'Tiago', 'Jose'],
+  baterPonto(horário: number): string {
+    if (horário <=8) {
+      return 'Ponto normal'
+} else {
+  return 'Fora do horário!'}
+  }
+}
+ console.log(funcionário.supervisores)
+ console.log(funcionário.baterPonto(8))
+ console.log(funcionário.baterPonto(9))
 
-    
+ // Union Types
+ let nota: number | string = 10
+ console.log(`Minha nota é ${nota}!`)
+ nota = '8'
+ console.log(`Minha nota é ${nota}!`)
+// nota = true
+
+// Chegando tipos
+let valor = 30
+
+if (typeof valor === "number") {
+  console.log("É um valor number!")
+}else{
+  console.log(typeof valor)
+}
+
+// Never
+function falha(msg:string): never{
+  throw new Error(msg)
+}
+
+const produto = {
+  nome: 'Bolacha',
+  preco: 2.50,
+  validarProduto() {
+    if(!this.nome || this.nome.trim(). length == 0) {
+      falha('Precisa ter um nome')
+    }
+    if(this.preco <= 0) {
+      falha('Preco invalido!')
+    }
+  }
+
+}
+produto.validarProduto
+
+// Null
+let altura = 12
+// altura = null
+
+let alturaOpcional: null | number = 12
+alturaOpcional = null
+
+type Contato = {
+  nome: string,
+  tel1: string,
+  tel2: string | null
+}
+
+const contato1: Contato = {
+  nome: 'Felipe',
+  tel1: '987264534',
+  tel2: 'null'
+
+}
+
+console.log(contato1.nome)
+console.log(contato1.tel1)
+console.log(contato1.tel2)
+
+let podeSerNulo = null // any!
+podeSerNulo = 12
+console.log(podeSerNulo)
+podeSerNulo = 'abc'
+console.log(podeSerNulo)
