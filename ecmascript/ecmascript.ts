@@ -145,19 +145,39 @@ console.log(`Motor: ${caracteristicas[0]}`)
 
 // Desafio 
 // exercicio 1
-let dobro = function(valor: any) {
+var dobro = function(valor) {
   return valor * 2
 }
 console.log(dobro(10))
 
 // exercicio 2
-let dizerOla = function (nome: any)  {
+var dizerOla = function (nome)  {
   if(nome === undefined) { nome = 'Pessoa'}
   console.log('Olá, ' + nome)
 }
 
-dizerOla('Pessoa')
+dizerOla()
 dizerOla('Anna')
 
 // exercicio 3
-var nums 
+var nums = [-3, 33, 38,5]
+// Imprimir o menor valor
+console.log('???')
+
+// exercicio 4
+var array = [55, 20]
+// Adicionar todos os elementos de "nums" em array
+console.log(array)
+
+// exercicio 5
+var notas = [8.5, 6.3, 9.4]
+var nota1 = notas[0]
+var nota2 = notas[1]
+var nota3 = notas[2]
+console.log(nota1, nota2, nota3)
+
+// exercio 6
+var cientista = { primeiroNome: 'Will', experiencia: 12}
+var primeiroNome = cientista.primeiroNome
+var experiencia = cientista.experiencia
+console.log(primeiroNome, experiencia)
