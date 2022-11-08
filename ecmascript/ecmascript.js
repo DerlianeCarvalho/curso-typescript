@@ -97,4 +97,33 @@ const { nome: n, preco: p, caracteristicas: { w } } = item;
 console.log(n);
 console.log(p);
 console.log(w);
+// Templates Strings
+const usuarioID = 'SuporteCod3r';
+const notificacoes = '9';
+// const boasVindas = 'Boas vindas'+ usuarioID +
+// 'Notificações: ' + notificacoes
+const boasVindas = `
+Boas vindas ${usuarioID},
+Notificações: ${parseInt(notificacoes) > 9 ? '+9' : notificacoes}
+`;
+console.log(boasVindas);
+console.log(`${(1 + 1) * 30}`);
+console.log(`Motor: ${caracteristicas[0]}`);
+// Desafio 
+// exercicio 1
+let dobro = function (valor) {
+    return valor * 2;
+};
+console.log(dobro(10));
+// exercicio 2
+let dizerOla = function (nome) {
+    if (nome === undefined) {
+        nome = 'Pessoa';
+    }
+    console.log('Olá, ' + nome);
+};
+dizerOla('Pessoa');
+dizerOla('Anna');
+// exercicio 3
+var nums;
 //# sourceMappingURL=ecmascript.js.map
