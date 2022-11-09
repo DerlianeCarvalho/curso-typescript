@@ -111,19 +111,47 @@ console.log(`${(1 + 1) * 30}`);
 console.log(`Motor: ${caracteristicas[0]}`);
 // Desafio 
 // exercicio 1
-let dobro = function (valor) {
-    return valor * 2;
-};
+const dobro = (valor) => valor * 2;
 console.log(dobro(10));
 // exercicio 2
-let dizerOla = function (nome) {
-    if (nome === undefined) {
-        nome = 'Pessoa';
-    }
+const dizerOla = function (nome = 'Pessoa') {
     console.log('Olá, ' + nome);
 };
-dizerOla('Pessoa');
+dizerOla();
 dizerOla('Anna');
 // exercicio 3
-var nums;
+const nums = [-3, 33, 38, 5];
+// Imprimir o menor valor
+console.log(Math.min(...nums));
+// exercicio 4
+const array = [55, 20];
+// Adicionar todos os elementos de "nums" em array
+array.push(...nums);
+console.log(array);
+// exercicio 5
+const notas = [8.5, 6.3, 9.4];
+const [nota1, nota2, nota3] = notas;
+console.log(nota1, nota2, nota3);
+// exercio 6
+const cientista = { primeiroNome: 'Will', experiencia: 12 };
+const { primeiroNome, experiencia } = cientista;
+console.log(primeiroNome, experiencia);
+// Callback
+function esperar3s(callback) {
+    setTimeout(() => {
+        callback('3s depois...');
+    }, 3000);
+}
+esperar3s(function (resultado) {
+    console.log(resultado);
+});
+function esperar3sPromise() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve('3s depois promise...');
+        }, 3000);
+    });
+}
+esperar3sPromise()
+    .then(dado => console.log(dado));
 //# sourceMappingURL=ecmascript.js.map
