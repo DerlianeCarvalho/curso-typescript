@@ -1,5 +1,7 @@
-import { areaRetangulo } from "./retangulo";
-import { areaCircunferncia } from "./circunferencia";
+import  retangulo  from "./retangulo.js";
+import { areaCircunferncia as circ } from "./circunferencia.js";
 
-console.log(areaRetangulo(7,8))
-console.log(areaCircunferncia(5))
+console.log('Modulo carregado...')
+console.log(retangulo(7,8))
+console.log(circ(5))
+
